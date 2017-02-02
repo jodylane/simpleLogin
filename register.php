@@ -5,15 +5,36 @@
  * Date: 2/2/2017
  * Time: 12:25 PM
  * Description: This file was created to
- */ ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-
-</body>
-</html>
+ */
+include "./includes/header.php";
+?>
+<div class="row">
+    <form action="registerUser.php" method="post">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="form-group">
+                <input required class="form-control" id="username" type="text" name="username"
+                       placeholder="Username"/>
+            </div>
+            <div class="form-group">
+                <input required class="form-control" id="password" type="password" name="password"
+                       placeholder="Password"/>
+            </div>
+            <div class="form-group">
+                <input required class="form-control" id="password" type="password" name="confirm"
+                       placeholder="Confirm password"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="form-group">
+                    <button class="btn btn-danger" id="cancel">Cancel</button>
+                    <button class="btn btn-success" id="submit" type="submit">Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<?php
+include "./includes/footer.php";
+?>

@@ -5,15 +5,19 @@
  * Date: 2/2/2017
  * Time: 12:25 PM
  * Description: This file was created to
- */ ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-
-</body>
-</html>
+ */
+include "./includes/header.php";
+?>
+    <form action="loginUser.php" method="post">
+        <div class="form-group">
+            <input required class="form-control" id="username" type="text" name="uname"
+                   placeholder="Username"/>
+        </div>
+        <div class="form-group">
+            <input required class="form-control" id="password" type="text" name="uname"
+                   placeholder="Password"/>
+        </div>
+    </form>
+<?php
+include "./includes/footer.php";
+?>
