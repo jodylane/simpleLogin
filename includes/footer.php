@@ -5,7 +5,7 @@
  * Date: 2/2/2017
  * Time: 12:29 PM
  * Description: This file was created to
- */ ?>
+ */
 ?>
 <footer class="foot navbar navbar-default">
     <p class="text-center copyright">Contacts 2017 &copy;</p>
