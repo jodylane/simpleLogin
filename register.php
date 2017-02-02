@@ -27,7 +27,9 @@ include "./includes/header.php";
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="form-group">
-                    <button class="btn btn-danger" id="cancel">Cancel</button>
+                    <a href="index.php">
+                        <button type="button" class="btn btn-danger" formnovalidate>Cancel</button>
+                    </a>
                     <button class="btn btn-success" id="submit" type="submit">Submit
                     </button>
                 </div>
