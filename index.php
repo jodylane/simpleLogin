@@ -7,9 +7,9 @@
  * Description: This file was created to
  */
 include "./includes/header.php";
-if(session_status() == PHP_SESSION_NONE){
+
     session_start();
-}
+
 if (isset($_SESSION['user_id']) &&
     isset($_SESSION['username'])
 ) {

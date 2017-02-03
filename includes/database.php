@@ -8,16 +8,16 @@
  */
 
 //local development
-$host = "localhost";
-$username = "phpuser";
-$password = "phpuser";
-$database = "simpleLogin";
+//$host = "localhost";
+//$username = "phpuser";
+//$password = "phpuser";
+//$database = "simpleLogin";
 
 //production server
-//$host = "localhost";
-//$username = "jodylane";
-//$password = "jodylane";
-//$database = "jodylane_db";
+$host = "localhost";
+$username = "jodylane";
+$password = "jodylane";
+$database = "jodylane_db";
 
 //connect to db
 $conn = @new mysqli($host, $username, $password, $database);
