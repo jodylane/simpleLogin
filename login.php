@@ -31,14 +31,14 @@ include "./includes/header.php";
             <h3 class="text-center">Simple Log Form</h3>
         </div>
         <div class="row">
-            <form action="registerUser.php" method="post">
+            <form action="loginUser.php" method="post">
                 <div class="col-md-4 col-md-offset-4">
                     <div class="form-group">
-                        <input required class="form-control" id="username" type="text" name="uname"
+                        <input required class="form-control" id="username" type="text" name="username"
                                placeholder="Username"/>
                     </div>
                     <div class="form-group">
-                        <input required class="form-control" id="password" type="text" name="uname"
+                        <input required class="form-control" id="password" type="password" name="password"
                                placeholder="Password"/>
                     </div>
                 </div>
@@ -57,5 +57,5 @@ include "./includes/header.php";
         </div>
     </div>
 <?php
-include "./includes/footer.php";
+include "./includes/fixFooter.php";
 ?>

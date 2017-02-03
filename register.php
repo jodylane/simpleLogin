@@ -42,10 +42,6 @@ include "./includes/header.php";
                     <input required class="form-control" id="password" type="password" name="password"
                            placeholder="Password"/>
                 </div>
-                <div class="form-group">
-                    <input required class="form-control" id="password" type="password" name="confirm"
-                           placeholder="Confirm password"/>
-                </div>
             </div>
             <div class="row">
                 <div class="col-md-2 col-md-offset-5">
@@ -62,5 +58,5 @@ include "./includes/header.php";
     </div>
 </div>
 <?php
-include "./includes/footer.php";
+include "./includes/fixFooter.php";
 ?>

@@ -21,8 +21,7 @@ if ($_SESSION['user_id'] > 0) {
 }else{
     $is_login = false;
 }
-require_once "./includes/functions.php";
-check_login($is_login)
+
 ?>
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
@@ -33,18 +32,31 @@ check_login($is_login)
             <li role="presentation" class="active">
                 <a href="index.php">Home</a>
             </li>
-            <li role="presentation">
-                <a href="register.php">Register</a>
-            </li>
-            <li role="presentation">
-                <a href="login.php">Login</a>
-            </li>
+            <?php
+            if($_SESSION['user_id'] == 0){
+                echo '<li role="presentation">';
+                echo '<a href="register.php">Register</a>';
+                echo '</li>';
+                echo '<li role="presentation">';
+                echo '<a href="login.php">Log in</a>';
+                echo '</li>';
+            }else{
+                echo '<li role="presentation">';
+                echo '<a href="logout.php">Log Out</a>';
+                echo '</li>';
+            }
+            ?>
         </ul>
     </div>
 </nav>
 <div class="container wrap">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
+            <?php
+            require_once "./includes/functions.php";
+            check_login($is_login);
+            ?>
+            <h3 class="text-center">N413 Simple Login</h3>
             <p>Login systems are essential for any kind of project that provides or accepts individual user data.  Login systems depend on at least two, and usually three items:</p>
             <ul>
                 <li><b>A "session".</b>  A session in PHP is a set of programming variables that are stored to a disk file on the server, and accessed with a key stored in a "cookie" in the user's browser.  The PHP session variable is a PHP associative array, accessed with the variable name $_SESSION.  Since the session variable is persistent between page loads, data such as preferences, authentication, etc., can be available as long as a user remains on a site.</li>
@@ -63,4 +75,5 @@ check_login($is_login)
 </div>
 <?php
 include "./includes/footer.php";
+session_write_close();
 ?>
