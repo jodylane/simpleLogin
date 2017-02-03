@@ -24,12 +24,12 @@ if ($_SESSION['user_id'] > 0) {
 require_once "./includes/functions.php";
 check_login($is_login)
 ?>
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="index.php">Simple Log in</a>
         </div>
-        <ul class="nav navbar-right nav-pills">
+        <ul class="nav navbar-right navbar-nav">
             <li role="presentation" class="active">
                 <a href="index.php">Home</a>
             </li>

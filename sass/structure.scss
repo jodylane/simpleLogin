@@ -6,13 +6,13 @@ body {
   position: relative;
 }
 
-ul {
-  padding-top: 5px;
-}
+//ul {
+//  padding-top: 5px;
+//}
 
 .navbar {
   margin-bottom: 0;
-
+  border-radius: 0;
 }
 
 .wrap {
@@ -30,14 +30,17 @@ ul {
 }
 
 footer {
+  color: #cccccc;
   position: absolute;
   bottom: 0;
   margin-bottom: -20px;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .footer {
+  color: #cccccc;
   position: absolute;
   bottom: 0;
   width: 100%;

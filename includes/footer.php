@@ -7,8 +7,11 @@
  * Description: This file was created to
  */
 ?>
-<footer class="foot navbar navbar-default">
-    <p class="text-center copyright">Contacts 2017 &copy;</p>
+<footer class="navbar navbar-inverse">
+    <div class="container">
+        <p class="text-center copyright">Contacts 2017 &copy;</p>
+    </div>
+
 </footer>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

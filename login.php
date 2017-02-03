@@ -8,12 +8,12 @@
  */
 include "./includes/header.php";
 ?>
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.php">Simple Log in</a>
             </div>
-            <ul class="nav navbar-right nav-pills">
+            <ul class="nav navbar-right navbar-nav">
                 <li role="presentation" class="disabled">
                     <a href="index.php">Home</a>
                 </li>
@@ -28,7 +28,7 @@ include "./includes/header.php";
     </nav>
     <div class="container wrap">
         <div class="row">
-            <h3 class="text-center">Log In</h3>
+            <h3 class="text-center">Simple Log Form</h3>
         </div>
         <div class="row">
             <form action="registerUser.php" method="post">
